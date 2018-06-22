@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+</div>
+
+<mat-card>You type a text here</mat-card>
+<div class="container">
+    <span>
+      <input #box
+      (keyup.enter)="update(box.value)"
+      (blur)="update(box.value)">
+    </span>
+    {{value}}
+</div>
+<h1>
+  {{title}}
+</h1>
+
+<button routerLink="/customers">Customers</button>
+<button routerLink="/orders">Orders</button>
+<button routerLink="">Home</button>
+
+<router-outlet></router-outlet>
+<router-outlet></router-outlet>
